@@ -44,6 +44,8 @@ Total supply of ICX in hex: 0x2961fff8ca4a62327800000
 Total supply of ICX in decimal: 800460000000000000000000000
 ```
 
+Note that you don't need to install RabbitMQ package on the host system in this configuration. Just need to install T-bears package for issuing some CLI commands.
+
 ## References
 
 * [T-Bears GitHub Repository](https://github.com/icon-project/t-bears)
