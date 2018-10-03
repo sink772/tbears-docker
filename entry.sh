@@ -2,6 +2,7 @@
 
 service rabbitmq-server start
 
-tbears start -c tbears_server_config.json
+tbears genconf
+tbears start
 
 exec /bin/bash

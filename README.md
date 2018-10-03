@@ -2,6 +2,9 @@
 
 This repository contains Dockerfile for running T-Bears server process in a Docker container.
 
+> **NOTE**: T-bears docker image is now officially provided by its project repository.
+> Please see https://github.com/icon-project/t-bears/tree/develop/Docker.
+
 ## Base Docker Image
 
 * ubuntu:18.04
