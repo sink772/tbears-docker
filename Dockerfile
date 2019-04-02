@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     lsof \
     && locale-gen en_US.UTF-8 \
     && pip3 install wheel \
-    && pip3 install tbears \
     && apt-get autoremove -y && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /root/.cache/pip
@@ -29,6 +28,15 @@ ENV LC_ALL en_US.UTF-8
 ENV WORKING_DIR "/tbears"
 WORKDIR ${WORKING_DIR}
 COPY entry.sh /usr/local/bin
+COPY tbears_server_config.json .
+ADD genesis genesis
+
+# Install packages
+RUN /tbears/genesis/install.sh
+
+# Execute bootstrap transactions
+RUN /tbears/genesis/sendtx.sh
+RUN rm -rf genesis
 
 EXPOSE 9000
 
