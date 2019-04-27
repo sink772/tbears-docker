@@ -1,4 +1,5 @@
-IMAGE_TAG=tbears-server
+VERSION=1.2.0-rc1
+IMAGE_TAG=iconloop/tbears:$(VERSION)
 
 build:
 	docker build -t $(IMAGE_TAG) .
