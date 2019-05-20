@@ -22,4 +22,4 @@ RUN ./genesis/sendtx.sh \
     && rm -rf genesis
 
 EXPOSE 9000
-CMD ["entry.sh"]
+ENTRYPOINT ["entry.sh"]
