@@ -5,6 +5,8 @@ HASHES='
     83537e56c647fbf0b726286ee08d31f12dba1bf7e50e8119eaffbf48004f237f
     314eb5c181a6f25d200d694622a3b6aa0b5401cd37ed9f99e773caed6b6857cd
     07a3800e41fd88add1bc56cc77bc9b16789a5067d1c292ec7adec5d4c75a330a
+    governance-0.0.7
+    set_revision_name-1.3.0
 '
 
 PWD=$(dirname $0)

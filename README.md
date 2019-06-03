@@ -15,12 +15,6 @@ This repository contains Dockerfile for running T-Bears server process in a Dock
 make build
 ```
 
-or
-
-```
-docker build -t iconloop/tbears .
-```
-
 ## Usage
 
 ### Run T-Bears Server
@@ -32,7 +26,7 @@ make run
 or
 
 ```
-docker run -it -p 9000:9000 --rm iconloop/tbears
+docker run -it -p 9000:9000 --rm iconloop/tbears:${TAG}
 ```
 
 This will start the T-Bears server in the container that is listening on port 9000 for incoming requests.
